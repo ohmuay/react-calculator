@@ -1,0 +1,12 @@
+.screen{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    background: grey;
+}
+.innerScreen{
+    width:100%;
+    margin:$s-size;
+    padding:$s-size;
+    text-align: right;
+}

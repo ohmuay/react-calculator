@@ -1,0 +1,12 @@
+.button{
+    padding: $s-size $m-size;
+    width:25%;
+    outline: none;
+    border:1px solid lighten(grey,10);
+}
+.button:hover{
+    opacity:0.8;
+}
+.button:active{
+    opacity:0.4;
+}
