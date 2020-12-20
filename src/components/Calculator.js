@@ -9,6 +9,7 @@ export default class Calculator extends React.Component{
     }
     getChar = (char)=>{
         if(char === '='){
+            if(this.state.output !== '')
             this.calculation()
         }else if(char === 'AC'){
             this.clearScreen()
@@ -35,34 +36,34 @@ export default class Calculator extends React.Component{
             <div className="numpad">
             
             <div className="row">
-            <Button char='(' getChar={this.getChar}/>
-            <Button char=')' getChar={this.getChar}/>
-            <Button char='%' getChar={this.getChar}/>
-            <Button char='AC' getChar={this.getChar}/>
+            <Button char='(' className="button" getChar={this.getChar}/>
+            <Button char=')' className="button" getChar={this.getChar}/>
+            <Button char='%' className="button" getChar={this.getChar}/>
+            <Button char='AC' className="button" getChar={this.getChar}/>
             </div>
             <div className="row">
-            <Button char='7' getChar={this.getChar}/>
-            <Button char='8' getChar={this.getChar}/>
-            <Button char='9' getChar={this.getChar}/>
-            <Button char='/' getChar={this.getChar}/>
+            <Button char='7' className="button" getChar={this.getChar}/>
+            <Button char='8' className="button" getChar={this.getChar}/>
+            <Button char='9' className="button" getChar={this.getChar}/>
+            <Button char='/' className="button" getChar={this.getChar}/>
             </div>
             <div className="row">
-            <Button char='4' getChar={this.getChar}/>
-            <Button char='5' getChar={this.getChar}/>
-            <Button char='6' getChar={this.getChar}/>
-            <Button char='*' getChar={this.getChar}/>
+            <Button char='4' className="button" getChar={this.getChar}/>
+            <Button char='5' className="button" getChar={this.getChar}/>
+            <Button char='6' className="button" getChar={this.getChar}/>
+            <Button char='*' className="button" getChar={this.getChar}/>
             </div>
             <div className="row">
-            <Button char='1' getChar={this.getChar}/>
-            <Button char='2' getChar={this.getChar}/>
-            <Button char='3' getChar={this.getChar}/>
-            <Button char='-' getChar={this.getChar}/>
+            <Button char='1' className="button" getChar={this.getChar}/>
+            <Button char='2' className="button" getChar={this.getChar}/>
+            <Button char='3' className="button" getChar={this.getChar}/>
+            <Button char='-' className="button" getChar={this.getChar}/>
             </div>
             <div className="row">
-            <Button char='0' getChar={this.getChar}/>
-            <Button char='.' getChar={this.getChar}/>
-            <Button char='=' getChar={this.getChar}/>
-            <Button char='+' getChar={this.getChar}/>
+            <Button char='0' className="button" getChar={this.getChar}/>
+            <Button char='.' className="button" getChar={this.getChar}/>
+            <Button char='=' className="button button--equal" getChar={this.getChar}/>
+            <Button char='+' className="button" getChar={this.getChar}/>
             </div>
             </div>
             

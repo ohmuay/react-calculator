@@ -3,7 +3,7 @@ import React from 'react'
 const Button = (props)=>{
     return (
         <button 
-        className="button"
+        className={props.className}
         onClick={(e)=>{
             props.getChar(props.char)
         }}
